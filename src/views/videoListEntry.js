@@ -1,6 +1,4 @@
 var VideoListEntryView = Backbone.View.extend({
-
-  //el: '.video-list',
    
   events: {
     'click .video-list-entry-title': 'handleClick'
@@ -15,8 +13,8 @@ var VideoListEntryView = Backbone.View.extend({
   
   handleClick: function(e) {
     e.stopImmediatePropagation();
-    console.log('hello');
     this.model.select();
+     
   },
 
   template: templateURL('src/templates/videoListEntry.html')

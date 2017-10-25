@@ -30,10 +30,7 @@
   <script src="src/data/exampleVideoData.js"></script>
 
   <script>
-    backboneReady(() => {
-      var App = new AppView();
-      App.render();
-    });
+    backboneReady(() => new AppView() );
   </script>
 
 </body>
